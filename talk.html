@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>WebSlides: Making HTML presentations easy</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+    <style>
+        body {
+            font-weight: bolder;
+            font-size: 200%;
+        }
+        .code {
+            display: inline-block;
+            background-color: #481036;
+            color: white;
+            font-family: monospace;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main role="main">
+
+        <article id="webslides" class="vertical">
+            <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+            <section>
+                <div class="wrap size-80">
+                    <div class="alignleft">
+                        <p class="text-context"></p>
+                        <h1 class="text-landing">Web Assembly</h1>
+                        <br><br>
+                        <h3>The Low Level Web</h3>
+                    </div>
+
+                    <div class="alignright">
+                        <img style="width: 80%; height: auto;" class="slide-top" src="src/logo.png">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section>
+                <div class="wrap size-80">
+                    <div class="grid sm">
+                        <div class="column">
+                            <img src="src/me.jpg" style="width: 80%; border-radius: 50%;">
+                            <br><br><br><br><br>
+                            <h4 class="text-landing">Chawki BENCHEHIDA</h4>
+                            <br><br><br><br>
+
+                        </div>
+
+                        <div class="column">
+                            <h3>Junior Full Stack Web & Mobile Developer</h3>
+                            <h4>Django / Node / Vue.js / Angular.js / Rest API / GraphQL / Native Android (Java)</h4>
+                            <hr>
+                            <h3>PhD student</h3>
+                            <h4>Embedded and Real-Time Systems</h4>
+                            <hr>
+                            <h3>Team Open Minds Co-Founder & VP</h3>
+
+                        </div>
+                    </div>
+
+                    <ul class="flexblock">
+                        <li>
+                            <h2 style="font-size: 130%;">
+                                <img width="10%" src="src/twitter.svg"><br> @ChawkiBenchehid
+                            </h2>
+                        </li>
+                        <li>
+                            <h2 style="font-size: 130%;">
+                                <img width="10%" src="src/github.svg"><br> /chawki27000
+                            </h2>
+                        </li>
+
+                        <li>
+                            <h2 style="font-size: 150%;">
+                                <img width="10%" src="src/google-plus.svg"><br> Chawki Benchehida
+                            </h2>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="bg-white">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <blockquote class="text-quote">
+                        <h2>Le premier ennemi de la connaissance n’est pas l’ignorance, c’est l’illusion de la connaissance.</h2>
+                        <h2><cite><a href="https://en.wikipedia.org/wiki/Sheryl_Sandberg">Stephen Hawking</a>, Physics Theorists.</cite></h2>
+                    </blockquote>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1 style="font-size: 400%;">Prerequired</h1>
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap size-80">
+                    <h1>Computers language</h1>
+                    <br><br><br>
+                    <h3>To exploit our computers, we give it some orders</h3>
+                    <h4 class="code">Hi computer! could you give me the result of (1 + 1)</h4>
+                    <h5>High Level Language</h5>
+                    <br><br>
+                    <h3>But unfortunatly, our computer cannot understand that</h3>
+                    <h4 class="code">10100101010101011111010101001010101010101010100101010</h4>
+                    <h5>Low Level Language</h5>
+                    <br><br><br>
+                    <h3>Translate : </h3>
+                    <h2>Hey dude, what do you mean ? It's a simple String for me !</h2>
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap size-100">
+                    <h1>Machine Language - Processor Micro-Architecture</h1>
+                    <br><br>
+                    <h3>Our processor can only execute instructions included in its ISA (Intruction-Set Architecture)</h3>
+                    <br>
+                    <h4 class="code">
+                        ADD reg, reg<br> ADD reg, mem<br> INC reg<br> SUB reg, reg<br> AND reg, reg
+                    </h4>
+                    <br><br>
+                    <h3>It's called : Assembly language</h3>
+                    <br><br>
+                    <h3>ISA examples : x86, ARM, PowerPC</h3>
+                    <hr>
+                    <h2>Thank you my dear <span style="color: red;">Compiler</span> ! Now I can understand human :)</h2>
+                </div>
+            </section>
+            
+            <section class="aligncenter">
+                <div class="wrap size-100">
+                <img style="width: 50%;" src="src/lang.png">
+                
+                </div>
+            </section>
+            
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1>ALU</h1>
+                    <br><br><br>
+                    <img style="width: 70%" src="src/wasm/19-computer-architecture17-large-opt.png">
+                </div>
+            </section>
+
+            <section class=" aligncenter">
+                <div class="wrap size-80">
+                    <h1>COMPILERS</h1>
+                    <br><br>
+                    <h2><strong>Classical Compilers</strong></h2>
+                    <h3>C/C++ ==> x86/ARM</h3>
+                    <br><br>
+                    <h2><strong>LLVM technique</strong></h2>
+                    <h3>C/C++ ==> IR ==> x86/ARM</h3>
+                    <h3>Using Front/Back compiler and Intermediate Respesentation</h3>
+                    <hr>
+                    <h2>gcc, g++, javac, PyPy, Gc</h2>
+                    <br><br>
+                    <h4>Another thing ! <strong>Interpreter</strong></h4>
+                </div>
+            </section>
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1 style="font-size: 400%;">The Peaceful and Beautiful <strong>WEB</strong> World</h1>
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap size-80">
+                    <img src="src/webbrowserwars.jpg">
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap">
+                    <h2>WEB History</h2>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h2><strong>90's</strong></h2>
+                            <h3>Static Content</h3>
+                            <h4>HTML & HTTP</h4>
+                            <br><br>
+                            <img src="src/old_site.png">
+                        </div>
+                        <!-- end .column -->
+                        <div class="column">
+                            <h2><strong>2000</strong></h2>
+                            <h3>Dynamic Content</h3>
+                            <h4>JavaScript, Ajax, Flash, ...</h4>
+                            <br><br>
+                            <img src="src/dyn_site.jpg">
+                        </div>
+                        <!-- end .column -->
+                        <div class="column">
+                            <h2><strong>2010</strong></h2>
+                            <h3>Standardization</h3>
+                            <h4>ECMAScript</h4>
+                            <h4>ES5</h4>
+                            <h4>ES6 / ES2015</h4>
+                            <h4>ES7</h4>
+                            <h4>ES8</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="wrap">
+                    <h2>Script War</h2>
+                    <ul class="flexblock blink border">
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/logo/17338.png">
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/logo/ActiveX_logo.png">
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/logo/asmjsinside.png">
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/logo/icon_applescript.jpg">
+                                    
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/logo/java_logo.gif">
+                                   
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/logo/vbscript.png">
+                                    
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 30%;" src="src/logo/762.jpg">
+                                    <h2>Microsoft SilverLight (.NET Platform)</h2>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="wrap">
+                    <h1>Standardisation</h1>
+                    <hr>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <img style="width: 30%" src="src/html.png">
+                            <br>
+                            <h3>HTML 5</h3>
+                        </div>
+                        <div class="column">
+                            <img style="width: 30%" src="src/css.png">
+                            <br>
+                            <h3>CSS 3</h3>
+
+                        </div>
+                        <div class="column">
+                            <img style="width: 30%" src="src/js.png">
+                            <br>
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="aligncenter">
+                        <h2><strong>Features : </strong></h2>
+                        <h3>Storage / IndexedDB</h3>
+                        <h3>Canvas / WebGL</h3>
+                        <h3>WebSocket / WebWorker (multi-processing)</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="wrap">
+                    <h2>JS Engine War</h2>
+                    <ul class="flexblock blink border">
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/firefox.png">
+                                    <h2>SpiderMonkey</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/v8.png">
+                                    <h2>V8 (Google)</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/webkit.png">
+                                    <h2>JavaScriptCore</h2>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Block Link = .blink">
+                                <!--div required = padding li or li>a-->
+                                <div>
+                                    <img class="aligncenter" style="width: 50%;" src="src/edge.png">
+                                    <h2>Chakra</h2>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="bg-black aligncenter">
+                <span class="background dark" style="background-image:url('src/bg1.jpg')"></span>
+                <div class="wrap size-100">
+                    <h1><strong>Developer Fed up</strong></h1>
+                    <br><br><br>
+                    <h1>Each of them has their own JS interpretation techniques</h1>
+                    <br>
+                    <h1>They implemented ECMAScript JS Standard in the iterative way</h1>
+                    <br>
+                    <h1>Syntactic sugar : <strong>CoffeScript</strong></h1>
+                    <br>
+                    <h1>TypeScript : A Microsoft's concurrent language for JS</h1>
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap size-100">
+                    <h1><strong>Transpilers</strong></h1>
+                    <br><br><br>
+                    <h2>Uning Transpilers to make generic scripts</h2>
+                    <br>
+                    <h2>Evoluted JS ==> Native Old JS (can be interpreted by old JS engines)</h2>
+                    <br><br><br>
+                    <img src="src/babel.png">
+                </div>
+            </section>
+
+            <section class="bg-black aligncenter">
+                <span class="background dark" style="background-image:url('src/lamp.gif')"></span>
+                <div class="wrap size-100">
+                    <h1>I'm not a JavaScript developer :(</h1>
+                    <br><br>
+                    <h1>Why don't create a transpiler for <strong>C/C++</strong> for us</h1>
+                    <br><br>
+                    <h1>If you do that, we can create more advanced and powerful web app :)</h1>
+                </div>
+            </section>
+
+            <section class="bg-blue aligncenter">
+                <div class="wrap size-80">
+                    <h1>Building a unique <strong>Low Level</strong> language, which can be easily understood on modern browsers</h1>
+                    <hr>
+                    <h1>Building compilers to translate from most popular <strong>High Level</strong> languages to our unique language</h1>
+                </div>
+            </section>
+
+            <section class="bg-black aligncenter">
+                <span class="background light" style="background-image:url('src/ring.jpg')"></span>
+                <div class="wrap size-80">
+                    <h1>One language to rule them all<br><br> One language to find them<br><br> One ring to bring them all and in the <strong>web</strong> bind them.</h1>
+                </div>
+            </section>
+
+            <section class="bg-green aligncenter">
+                <div class="wrap size-80">
+                    <h1><strong>Web Assembly</strong></h1>
+                    <br><br>
+                    <h1>Portable compilation target for the web</h1>
+                    <br><br>
+                    <h1>Allows running languages others then JS within browsers</h1>
+                </div>
+            </section>
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1>UB - United Browser</h1>
+                    <br><br><br>
+                    <img src="src/wasm/27-logo-party01-large-opt.png">
+                </div>
+            </section>
+
+            <section class=" aligncenter">
+                <div class="wrap size-80">
+                    <h1>Web Assembly Example</h1>
+                    <br><br><br><br>
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <h3 class="aligncenter">High Language (C)</h3>
+                            <img style="width: 70%" src="src/wasm/c.png">
+                        </div>
+                        <!-- end .column -->
+                        <div class="column">
+                            <h3 class="aligncenter">Binary (Wasm)</h3>
+                            <img src="src/wasm/bin.png">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1>Web Assembly Format</h1>
+                    <br><br><br>
+                    <img style="width: 80%" src="src/wasm/04-06-hex_binary_asm01.png">
+                </div>
+            </section>
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1>Web Assembly Text Format</h1>
+                    <br><br><br>
+                    <img style="width: 100%" src="src/wasm/04-07-hex_binary_asm02.png">
+                </div>
+            </section>
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1>JS VS Web Assembly</h1>
+                    <br>
+                    <img style="width: 70%" src="src/wasm/08-diagram-now01-large-opt.png">
+                    <h1>VS</h1>
+                    <br>
+                    <img style="width: 70%" src="src/wasm/10-diagram-future01-large-opt.png">
+                </div>
+            </section>
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1>Web Assembly compilation toolchain</h1>
+                    <br>
+                    <img style="width: 60%" src="src/wasm/24-toolchain07-opt.png">
+                </div>
+            </section>
+
+            <section class="bg-white aligncenter">
+                <div class="wrap size-80">
+                    <h1>High Level Language Power</h1>
+                    <br>
+                    <img style="width: 80%" src="src/wasm/23-langs08-large-opt.png">
+                </div>
+            </section>
+
+            <section class="bg-green aligncenter">
+                <div class="wrap size-80">
+                    <h1><strong>Use Cases - Let's exploite it</strong></h1>
+                </div>
+            </section>
+
+            <section class="aligncenter">
+                <div class="wrap size-100">
+                    <h2>Game / Image and Video Editing</h2>
+                    <h2>VR / Image Recongnition</h2>
+                    <h2>Scientific Visualisation / Simulation</h2>
+                    <h2>Peer-to-peer applications (games, collaborative editing, decentralized and centralized)</h2>
+                    <h2>Developer tooling (editors, compilers, debuggers, …)</h2>
+                    <h2>Remote desktop / VPN / Encryption</h2>
+                </div>
+            </section>
+            
+            <section class="bg-black aligncenter">
+                <span class="background" style="background-image:url('src/screen1.png')"></span>
+            
+            </section>
+            
+            
+            <section class=" aligncenter">
+                <div class="wrap size-80">
+                    <img src="src/av1.png">
+                    <br><br><br>
+                    <h2>AV1 Bitstream Analyzer</h2>
+                    <h4>Improve coding efficiency by 25% over HEVC (h.265)</h4>
+                </div>
+            </section>
+
+            <section class="bg-black aligncenter">
+                <div class="wrap size-80">
+                    <h1><strong>Future</strong></h1>
+                    <br><br>
+                    <h1>Thread / SIMD / GC / Exception Handling</h1>
+                    <br>
+                    <h1>Adoption : Go, Python, Java, .NET, ...</h1>
+                    <br>
+                    <h1>Mozilla : WebPack WA Integration Founding</h1>
+                </div>
+            </section>
+
+            <section class="aligncenter bg-black">
+                <span class="background" style="background-image:url('src/stars.jpeg')"></span>
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <h1 style="font-size: 500%;">Thank You</h1>
+                    <br><br><br>
+                    <h1 style="font-size: 500%;">:)</h1>
+                </div>
+                <!-- .end .wrap -->
+            </section> 
+            
+        </article>
+        <!-- end article -->
+    </main>
+
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+        window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+</body>
+
+</html>
